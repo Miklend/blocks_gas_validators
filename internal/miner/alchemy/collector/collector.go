@@ -153,7 +153,7 @@ func (bc *blockCollector) CollectHistoryBlocksBatch(ctx context.Context, cfg con
 						return
 					}
 
-					block, err := bc.CollectBlockByNumber(ctx, num)
+					block, err := bc.CollectBlockByNumberJSON(ctx, num)
 					if err != nil {
 						bc.logger.Warnf("worker %d failed to fetch block %d: %v", workerID, num, err)
 						continue

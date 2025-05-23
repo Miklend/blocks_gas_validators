@@ -14,9 +14,9 @@ storage:
   username: postgres
 
 alchemy:
-  mode: history
-  start: 22488000
-  end: 22489220
+  mode: last
+  start: 22487000
+  end: 22488099
   network_name: ethereum
   name_api_key: ALCHEMY_API_KEY
   limiter: 25
